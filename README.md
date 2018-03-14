@@ -51,5 +51,5 @@ Outputs:
 
 - `(slide-start)="slideStart($event)"`
 	- Emitted before the slide animation starts, the value emitted is a boolean indicating if the content is currently visible or not.
-- `(slide-end)="slideStart($event)"`
+- `(slide-end)="slideEnd($event)"`
 	- Emitted when the slide animation has finished, , the value emitted is a boolean indicating if the content is currently visible or not.
