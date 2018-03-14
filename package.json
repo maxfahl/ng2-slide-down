@@ -21,8 +21,5 @@
   "bugs": {
     "url": "https://github.com/maxfahl/ng2-slide-down/issues"
   },
-  "homepage": "https://github.com/maxfahl/ng2-slide-down#readme",
-  "dependencies": {
-    "@angular/core": "^5.2.8"
-  }
+  "homepage": "https://github.com/maxfahl/ng2-slide-down#readme"
 }
