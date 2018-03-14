@@ -34,7 +34,7 @@ export class Ng2SlideDownDirective implements OnDestroy {
 	 *
 	 * Value emitted indicates if the content is visible or not.
 	 */
-	@Output('slide-down-start')
+	@Output('slide-start')
 	slideStart: EventEmitter<boolean>;
 
 	/**
@@ -42,7 +42,7 @@ export class Ng2SlideDownDirective implements OnDestroy {
 	 *
 	 * Value emitted indicates if the content is visible or not.
 	 */
-	@Output('slide-down-end')
+	@Output('slide-end')
 	slideEnd: EventEmitter<boolean>; // Value indicated if
 
 	constructor(
