@@ -24,7 +24,8 @@ export class Ng2SlideDownDirective implements OnDestroy {
 	@Input('slide-down')
 	set collapsed(val: boolean) {
 		if (this._visible !== val) {
-			this.toggleVisible();
+			this._visible = val;
+			this.showOrHide();
 			this._initialized = true;
 		}
 	}
@@ -43,7 +44,7 @@ export class Ng2SlideDownDirective implements OnDestroy {
 	 * Value emitted indicates if the content is visible or not.
 	 */
 	@Output('slide-end')
-	slideEnd: EventEmitter<boolean>; // Value indicated if
+	slideEnd: EventEmitter<boolean>;
 
 	constructor(
 		private elRef: ElementRef,
@@ -53,9 +54,7 @@ export class Ng2SlideDownDirective implements OnDestroy {
 		this.slideEnd = new EventEmitter<boolean>();
 	}
 
-	private toggleVisible(): void {
-		this._visible = !this._visible;
-
+	private showOrHide(): void {
 		if (this._visible)
 			this.show();
 		else
