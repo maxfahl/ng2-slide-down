@@ -1,14 +1,14 @@
 # ng2-slide-down
 
-`ng2-slide-down` is a simple and extremely lightweight angular 2+ module providing slide down functionality in the package of a directive.
+`ng2-slide-down` is a simple and extremely lightweight angular 2+ module providing slide down functionality in the form of a directive.
 
 ## Features
 
-- Customizable animation duration
-- Customizable animation easing
-- Optional animation
+- Animation can be turned off
+- Animation duration is customizable
+- Animation ease function is customizable
 - Outputs for when the slide animation starts and ends
-- AoT compilable
+- AoT compatible
 
 ## Installation
 To use `ng2-slide-down` in your project install it via [npm](https://www.npmjs.com/package/ng2-slide-down):
@@ -33,7 +33,7 @@ export class AppModule {}
 Include it in your template on any block element.
 
 ```html
-<div [slide-down]="slideDownVisible">
+<div [slide-down]="contentVisible">
 	...
 </div>
 ```
