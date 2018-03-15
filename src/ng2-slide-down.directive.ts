@@ -77,7 +77,6 @@ export class Ng2SlideDownDirective implements OnDestroy {
 		}
 
 		this.waitDOMRender(() => {
-			console.log(this.getHeight());
 			this.renderer.setStyle(this.element, 'height', `${ this.getHeight() }px`);
 			this._animationTimeout = window.setTimeout(() => {
 				this.renderer.setStyle(this.element, 'overflowY', null);

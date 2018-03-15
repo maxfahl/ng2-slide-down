@@ -3,5 +3,8 @@
  * Created 2018 by Max Fahl.
  */
 
-export * from './src/ng2-slide-down.module';
-export * from './src/ng2-slide-down.directive';
+export declare class Ng2SlideDownModule {
+}
+
+export declare class Ng2SlideDownDirective {
+}
