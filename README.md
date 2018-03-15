@@ -53,3 +53,22 @@ Outputs:
 	- Emitted before the slide animation starts, the value emitted is a boolean indicating if the content is currently visible or not.
 - `(slide-end)="slideEnd($event)"`
 	- Emitted when the slide animation has finished, , the value emitted is a boolean indicating if the content is currently visible or not.
+	
+## Worth noting
+
+1. Elements with the slide-down directive cannot have vertical padding applied to them. If this is required just wrap another div inside this element and apply padding to that div.
+2. Direct children of the element with the slide-down directive should be styled as a block (or flex), if you need to float the children in any way please wrap another element inside it and float its children.
+
+```html
+<!-- No vertical padding allowed here -->
+<div [slide-down]="contentVisible">
+	
+	<!-- Wrapped div with padding -->
+	<div style="padding: 20px 0;" class="clearfix">
+	
+		<!-- Floated children not direct children -->
+		<div style="float: left;">...</div>
+		...
+	</div>
+</div>
+```
