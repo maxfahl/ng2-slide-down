@@ -22,7 +22,7 @@ export class Ng2SlideDownDirective implements OnDestroy {
 	easing: string = 'ease-out';
 
 	@Input('slide-down')
-	set collapsed(val: boolean) {
+	set slideDown(val: boolean) {
 		if (this._visible !== val) {
 			this._visible = val;
 			this.showOrHide();
@@ -77,6 +77,7 @@ export class Ng2SlideDownDirective implements OnDestroy {
 		}
 
 		this.waitDOMRender(() => {
+			console.log(this.getHeight());
 			this.renderer.setStyle(this.element, 'height', `${ this.getHeight() }px`);
 			this._animationTimeout = window.setTimeout(() => {
 				this.renderer.setStyle(this.element, 'overflowY', null);
@@ -115,7 +116,7 @@ export class Ng2SlideDownDirective implements OnDestroy {
 	 */
 	private getHeight(): number {
 		let height = 0;
-		this.elementChildren.forEach(child => height += child.clientHeight);
+		this.elementChildren.forEach(child => height += child.getBoundingClientRect().height);
 		return height;
 	}
 
