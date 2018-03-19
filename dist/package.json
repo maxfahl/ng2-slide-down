@@ -1,0 +1,41 @@
+{
+  "name": "ng2-slide-down",
+  "version": "0.1.5",
+  "description": "A slide down directive for Angular 2+",
+  "main": "bundles/ng2-slide-down.umd.js",
+  "typings": "ng2-slide-down.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ng-packagr -p package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxfahl/ng2-slide-down.git"
+  },
+  "keywords": [
+    "angular2",
+    "angular",
+    "slide",
+    "down"
+  ],
+  "author": "Max Fahl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxfahl/ng2-slide-down/issues"
+  },
+  "homepage": "https://github.com/maxfahl/ng2-slide-down#readme",
+  "devDependencies": {
+    "@angular/compiler": "^5.2.8",
+    "@angular/compiler-cli": "^5.2.8",
+    "tsickle": ">=0.25.5",
+    "tslib": "^1.7.1",
+    "typescript": ">=2.4.2",
+    "ng-packagr": "^2.2.0"
+  },
+  "module": "esm5/ng2-slide-down.js",
+  "es2015": "esm2015/ng2-slide-down.js",
+  "metadata": "ng2-slide-down.metadata.json",
+  "dependencies": {
+    "tslib": "^1.7.1"
+  }
+}

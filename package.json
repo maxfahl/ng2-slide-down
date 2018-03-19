@@ -5,7 +5,8 @@
 	"main": "index.ts",
 	"typings": "index.ts",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "ng-packagr -p package.json"
 	},
 	"repository": {
 		"type": "git",
@@ -22,5 +23,18 @@
 	"bugs": {
 		"url": "https://github.com/maxfahl/ng2-slide-down/issues"
 	},
-	"homepage": "https://github.com/maxfahl/ng2-slide-down#readme"
+	"homepage": "https://github.com/maxfahl/ng2-slide-down#readme",
+	"devDependencies": {
+		"@angular/compiler": "^5.2.8",
+		"@angular/compiler-cli": "^5.2.8",
+		"tsickle": ">=0.25.5",
+		"tslib": "^1.7.1",
+		"typescript": ">=2.4.2",
+		"ng-packagr": "^2.2.0"
+	},
+	"ngPackage": {
+		"lib": {
+			"entryFile": "index.ts"
+		}
+	}
 }
