@@ -1,6 +1,6 @@
 {
   "name": "ng2-slide-down",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A slide down directive for Angular 2+",
   "main": "bundles/ng2-slide-down.umd.js",
   "typings": "ng2-slide-down.d.ts",
