@@ -8,10 +8,10 @@
 - Animation duration is customizable
 - Animation ease function is customizable
 - Outputs for when the slide animation starts and ends
-- AoT compatible
+- AoT compilable
 
 ## Installation
-To use `ng2-slide-down` in your project install it via [npm](https://www.npmjs.com/package/ng2-slide-down):
+To use `ng2-slide-down` in your project install it via [npm](https://www.npmjs.com/package/ng2-slide-down)
 ```
 npm i ng2-slide-down --save
 ```
@@ -41,7 +41,7 @@ Include it in your template on any block element.
 Additional inputs:
 
 - `[slide-down-animated]="boolean"`
-	- If the slide down should be animated or not (defaults to `true`)
+	- If the slide down should be animated (defaults to `true`)
 - `[slide-down-duration]="number"`
 	- The slide animation duration in seconds (defaults to `0.25`)
 - `[slide-down-easing]="string"`
@@ -50,9 +50,9 @@ Additional inputs:
 Outputs:
 
 - `(slide-start)="slideStart($event)"`
-	- Emitted before the slide animation starts, the value emitted is a boolean indicating if the content is currently visible or not.
+	- Emitted before the slide animation starts, the value emitted is a boolean indicating if the content is currently visible.
 - `(slide-end)="slideEnd($event)"`
-	- Emitted when the slide animation has finished, , the value emitted is a boolean indicating if the content is currently visible or not.
+	- Emitted when the slide animation has finished, the value emitted is a boolean indicating if the content is currently visible.
 	
 ## Worth noting
 
